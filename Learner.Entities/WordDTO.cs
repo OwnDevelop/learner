@@ -8,8 +8,10 @@ namespace Learner.Entities
 {
     public class WordDTO
     {
+        public Guid Id { get; set; }
+
         public string Word { get; set; }
 
-        public HashSet<string> Traslates { get; set; }
+        public HashSet<string> Translates { get; set; }
     }
 }
