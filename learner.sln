@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Learner.PL.Forms", "Learner.PL.Forms\Learner.PL.Forms.csproj", "{C92BF653-1677-4BE4-9373-005F27861677}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PL", "PL", "{0F1059CE-17BE-465F-9A8F-238858A5772A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BLL", "BLL", "{D786F754-02C8-4AE5-BB4F-C6939F500027}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DAL", "DAL", "{B0F93D78-377D-4F94-BD5F-0E977712EE10}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C92BF653-1677-4BE4-9373-005F27861677}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C92BF653-1677-4BE4-9373-005F27861677}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C92BF653-1677-4BE4-9373-005F27861677}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C92BF653-1677-4BE4-9373-005F27861677}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C92BF653-1677-4BE4-9373-005F27861677} = {0F1059CE-17BE-465F-9A8F-238858A5772A}
+	EndGlobalSection
+EndGlobal
