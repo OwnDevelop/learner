@@ -28,45 +28,50 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btn_addWord = new System.Windows.Forms.Button();
+            this.btn_startLearn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // btn_addWord
             // 
-            this.button1.Location = new System.Drawing.Point(40, 42);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(277, 64);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btn_addWord.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btn_addWord.Location = new System.Drawing.Point(41, 46);
+            this.btn_addWord.Name = "btn_addWord";
+            this.btn_addWord.Size = new System.Drawing.Size(276, 64);
+            this.btn_addWord.TabIndex = 0;
+            this.btn_addWord.Text = "Add new word";
+            this.btn_addWord.UseVisualStyleBackColor = true;
+            this.btn_addWord.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // btn_startLearn
             // 
-            this.button2.Location = new System.Drawing.Point(41, 162);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(276, 67);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btn_startLearn.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btn_startLearn.Location = new System.Drawing.Point(41, 151);
+            this.btn_startLearn.Name = "btn_startLearn";
+            this.btn_startLearn.Size = new System.Drawing.Size(276, 67);
+            this.btn_startLearn.TabIndex = 1;
+            this.btn_startLearn.Text = "Start learning";
+            this.btn_startLearn.UseVisualStyleBackColor = true;
+            this.btn_startLearn.Click += new System.EventHandler(this.btn_startLearn_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(368, 261);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btn_startLearn);
+            this.Controls.Add(this.btn_addWord);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Learner";
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btn_addWord;
+        private System.Windows.Forms.Button btn_startLearn;
     }
 }
 

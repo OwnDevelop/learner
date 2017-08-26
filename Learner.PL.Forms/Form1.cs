@@ -16,5 +16,15 @@ namespace Learner.PL.Forms
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_startLearn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
