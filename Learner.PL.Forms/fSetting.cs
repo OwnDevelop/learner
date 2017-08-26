@@ -10,29 +10,22 @@ using System.Windows.Forms;
 
 namespace Learner.PL.Forms
 {
-    public partial class Form1 : Form
+    public partial class fSetting : Form
     {
-        fSetting setting;
-
-        public Form1()
+        public fSetting()
         {
             InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            //Save chenges
+            this.Close();
         }
 
-        private void btn_startLearn_Click(object sender, EventArgs e)
+        private void btn_cancel_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void btn_settings_Click(object sender, EventArgs e)
-        {
-            setting = new fSetting();
-            setting.ShowDialog();
+            this.Close();
         }
     }
 }
