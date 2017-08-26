@@ -1,12 +1,13 @@
 ﻿using Learner.BLL.Abstract;
+using Learner.DAL;
+using Learner.DAL.Abstract;
+using Learner.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Learner.Entities;
-using Learner.DAL.Abstract;
-using Learner.DAL;
+
 
 namespace Leaner.BLL
 {
@@ -26,7 +27,7 @@ namespace Leaner.BLL
 
         public WordDTO Get(Guid Id)
         {
-            dal.Get(Id);
+           return dal.Get(Id);
         }
 
         public IEnumerable<WordDTO> GetAllWords()
@@ -34,9 +35,9 @@ namespace Leaner.BLL
             return dal.GetAllWords().ToArray();
         }
 
-        public bool Remove(WordDTO data)
+        public bool Remove(Guid Id)
         {
-            return dal.Remove(data);
+            return dal.Remove(Id);
         }
 
         public bool Update(WordDTO data)

@@ -1,9 +1,9 @@
-﻿using Learner.DAL.Abstract;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Learner.DAL.Abstract;
 using Learner.Entities;
 
 namespace Learner.DAL
