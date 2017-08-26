@@ -14,6 +14,9 @@ namespace Learner.DAL
 
         public bool Add(WordDTO data)
         {
+            if (data == null)
+                throw new NullReferenceException();
+
             storage.Add(data);
 
             return true;

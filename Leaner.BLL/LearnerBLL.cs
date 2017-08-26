@@ -17,17 +17,35 @@ namespace Leaner.BLL
 
         public LearnerBLL()
         {
-             dal = new LearnerFakeDAL();
+            dal = new LearnerFakeDAL();
         }
 
         public bool Add(WordDTO data)
         {
-            return dal.Add(data);
+            try
+            {
+                return dal.Add(data);
+            }
+            catch (NullReferenceException e)
+            {
+                throw e;
+            }
         }
 
         public WordDTO Get(Guid Id)
         {
-           return dal.Get(Id);
+            try
+            {
+                return dal.Get(Id);
+            }
+            catch (NotFoundException e)
+            {
+                throw e;
+            }
+            catch (Exception e)
+            {
+                throw new UnknowException("Unknow exception", e);
+            }
         }
 
         public IEnumerable<WordDTO> GetAllWords()
@@ -37,12 +55,38 @@ namespace Leaner.BLL
 
         public bool Remove(Guid Id)
         {
-            return dal.Remove(Id);
+            try
+            {
+                return dal.Remove(Id);
+            }
+            catch (NotFoundException e)
+            {
+                throw e;
+            }
+            catch (Exception e)
+            {
+                throw new UnknowException("Unknow exception", e);
+            }
         }
 
         public bool Update(WordDTO data)
         {
-            throw new NotImplementedException();
+            try
+            {
+                return dal.Update(data);
+            }
+            catch (NullReferenceException e)
+            {
+                throw e;
+            }
+            catch(NotFoundException e)
+            {
+                throw e;
+            }
+            catch (Exception e)
+            {
+                throw new UnknowException("Unknow exception", e);
+            }
         }
     }
 }
