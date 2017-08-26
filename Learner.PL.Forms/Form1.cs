@@ -12,7 +12,8 @@ namespace Learner.PL.Forms
 {
     public partial class Form1 : Form
     {
-        fSetting setting;
+        fSetting settingsForm;
+        fAddWords addForm;
 
         public Form1()
         {
@@ -21,7 +22,8 @@ namespace Learner.PL.Forms
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            addForm = new fAddWords();
+            addForm.ShowDialog();
         }
 
         private void btn_startLearn_Click(object sender, EventArgs e)
@@ -31,8 +33,8 @@ namespace Learner.PL.Forms
 
         private void btn_settings_Click(object sender, EventArgs e)
         {
-            setting = new fSetting();
-            setting.ShowDialog();
+            settingsForm = new fSetting();
+            settingsForm.ShowDialog();
         }
     }
 }
