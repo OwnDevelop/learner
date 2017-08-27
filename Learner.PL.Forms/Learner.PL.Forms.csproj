@@ -45,6 +45,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="fAddWords.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fAddWords.Designer.cs">
+      <DependentUpon>fAddWords.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fError.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fError.Designer.cs">
+      <DependentUpon>fError.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -57,8 +69,15 @@
     <Compile Include="fSetting.Designer.cs">
       <DependentUpon>fSetting.cs</DependentUpon>
     </Compile>
+    <Compile Include="Learner.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="fAddWords.resx">
+      <DependentUpon>fAddWords.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fError.resx">
+      <DependentUpon>fError.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -86,6 +105,20 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Leaner.BLL\Leaner.BLL.csproj">
+      <Project>{59151074-03e1-4f0c-b4f7-96141cd27df6}</Project>
+      <Name>Leaner.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Learner.BLL.Abstract\Learner.BLL.Abstract.csproj">
+      <Project>{7d4b8ffc-ebf1-42e3-b103-2e4670bbfbf4}</Project>
+      <Name>Learner.BLL.Abstract</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Learner.Entities\Learner.Entities.csproj">
+      <Project>{b88ba372-29bf-4678-8ea4-710ee4d5c14e}</Project>
+      <Name>Learner.Entities</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

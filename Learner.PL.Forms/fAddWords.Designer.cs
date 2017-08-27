@@ -42,6 +42,7 @@
             this.txtb_val5 = new System.Windows.Forms.TextBox();
             this.btn_add = new System.Windows.Forms.Button();
             this.btn_cancel = new System.Windows.Forms.Button();
+            this.lbl_val6 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtb_word
@@ -167,11 +168,22 @@
             this.btn_cancel.UseVisualStyleBackColor = true;
             this.btn_cancel.Click += new System.EventHandler(this.btn_cancel_Click);
             // 
+            // lbl_val6
+            // 
+            this.lbl_val6.AutoSize = true;
+            this.lbl_val6.Location = new System.Drawing.Point(25, 225);
+            this.lbl_val6.Name = "lbl_val6";
+            this.lbl_val6.Size = new System.Drawing.Size(35, 13);
+            this.lbl_val6.TabIndex = 16;
+            this.lbl_val6.Text = "label1";
+            this.lbl_val6.Visible = false;
+            // 
             // fAddWords
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(467, 251);
+            this.ClientSize = new System.Drawing.Size(467, 261);
+            this.Controls.Add(this.lbl_val6);
             this.Controls.Add(this.btn_cancel);
             this.Controls.Add(this.btn_add);
             this.Controls.Add(this.txtb_val5);
@@ -209,5 +221,6 @@
         private System.Windows.Forms.TextBox txtb_val5;
         private System.Windows.Forms.Button btn_add;
         private System.Windows.Forms.Button btn_cancel;
+        private System.Windows.Forms.Label lbl_val6;
     }
 }

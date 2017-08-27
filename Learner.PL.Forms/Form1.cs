@@ -18,6 +18,7 @@ namespace Learner.PL.Forms
         public Form1()
         {
             InitializeComponent();
+            Learner.Initialize();
         }
 
         private void button1_Click(object sender, EventArgs e)

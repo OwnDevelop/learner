@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Learner.Entities;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,12 +15,14 @@ namespace Learner.PL.Forms
     {
         List<Label> labels;
         List<TextBox> textBoxes;
+        fError errorForm;
 
         public fAddWords()
         {
             InitializeComponent();
             labels = new List<Label>();
             textBoxes = new List<TextBox>();
+            InitializeLists();
         }
 
         private void InitializeLists()
@@ -42,12 +45,44 @@ namespace Learner.PL.Forms
         {
             if (!string.IsNullOrWhiteSpace(txtb_word.Text))
             {
-                var a = textBoxes.Where(x => !string.IsNullOrEmpty(x.Text));
+                var noEmptyBoxes = textBoxes.Where(x => !string.IsNullOrWhiteSpace(x.Text));
 
-                if (a != null)
+                if (noEmptyBoxes.Count() != 0)
                 {
                     //add in bll
+                    WordDTO word = new WordDTO();
+                    word.Id = Guid.NewGuid();
+                    word.Word = txtb_word.Text;
+
+                    HashSet<string> interedTranslate = new HashSet<string>();
+
+                    foreach (var item in noEmptyBoxes)
+                    {
+                        interedTranslate.Add(item.Text.ToLower());
+                    }
+
+                    //Output test
+                    lbl_val6.Text = string.Format("word '{0}' translate as ", word.Word);
+
+                    foreach (var item in interedTranslate)
+                    {
+                        lbl_val6.Text += item + " ";
+                    }
+                    lbl_val6.Visible = true;
+
+                    word.Translates = interedTranslate;
+                   //Learner.bll.Add(word);
                 }
+                else
+                {
+                    errorForm = new fError("Word hasn't translate");
+                    errorForm.ShowDialog();
+                }
+            }
+            else
+            {
+                errorForm = new fError("Field with word is empty");
+                errorForm.ShowDialog();
             }
         }
 
