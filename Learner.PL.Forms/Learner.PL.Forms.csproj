@@ -49,16 +49,44 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="fAddWords.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fAddWords.Designer.cs">
+      <DependentUpon>fAddWords.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fError.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fError.Designer.cs">
+      <DependentUpon>fError.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="fSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fSetting.Designer.cs">
+      <DependentUpon>fSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Learner.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="fAddWords.resx">
+      <DependentUpon>fAddWords.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fError.resx">
+      <DependentUpon>fError.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fSetting.resx">
+      <DependentUpon>fSetting.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -97,8 +125,11 @@
       <Name>Learner.Entities</Name>
     </ProjectReference>
   </ItemGroup>
+<<<<<<< HEAD
+=======
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
+>>>>>>> 137b0827aafce032bbff3cfdd4f8830abd1be97a
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

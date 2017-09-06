@@ -31,10 +31,14 @@
             this.btn_addWord = new System.Windows.Forms.Button();
             this.WatchAllWords = new System.Windows.Forms.Button();
             this.btn_startLearn = new System.Windows.Forms.Button();
+<<<<<<< HEAD
+            this.btn_settings = new System.Windows.Forms.Button();
+=======
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.importWords = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.tableLayoutPanel1.SuspendLayout();
+>>>>>>> 137b0827aafce032bbff3cfdd4f8830abd1be97a
             this.SuspendLayout();
             // 
             // btn_addWord
@@ -42,7 +46,11 @@
             this.btn_addWord.BackColor = System.Drawing.SystemColors.ControlDark;
             this.btn_addWord.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btn_addWord.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+<<<<<<< HEAD
+            this.btn_addWord.Location = new System.Drawing.Point(168, 239);
+=======
             this.btn_addWord.Location = new System.Drawing.Point(3, 214);
+>>>>>>> 137b0827aafce032bbff3cfdd4f8830abd1be97a
             this.btn_addWord.Name = "btn_addWord";
             this.btn_addWord.Size = new System.Drawing.Size(362, 68);
             this.btn_addWord.TabIndex = 0;
@@ -67,7 +75,11 @@
             this.btn_startLearn.BackColor = System.Drawing.SystemColors.Highlight;
             this.btn_startLearn.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btn_startLearn.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+<<<<<<< HEAD
+            this.btn_startLearn.Location = new System.Drawing.Point(168, 29);
+=======
             this.btn_startLearn.Location = new System.Drawing.Point(3, 3);
+>>>>>>> 137b0827aafce032bbff3cfdd4f8830abd1be97a
             this.btn_startLearn.Name = "btn_startLearn";
             this.btn_startLearn.Size = new System.Drawing.Size(362, 134);
             this.btn_startLearn.TabIndex = 1;
@@ -75,6 +87,18 @@
             this.btn_startLearn.UseVisualStyleBackColor = false;
             this.btn_startLearn.Click += new System.EventHandler(this.btn_startLearn_Click);
             // 
+<<<<<<< HEAD
+            // btn_settings
+            // 
+            this.btn_settings.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btn_settings.Location = new System.Drawing.Point(168, 135);
+            this.btn_settings.Name = "btn_settings";
+            this.btn_settings.Size = new System.Drawing.Size(276, 64);
+            this.btn_settings.TabIndex = 2;
+            this.btn_settings.Text = "Settings";
+            this.btn_settings.UseVisualStyleBackColor = true;
+            this.btn_settings.Click += new System.EventHandler(this.btn_settings_Click);
+=======
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 1;
@@ -113,13 +137,21 @@
             this.openFileDialog1.Filter = "Txt Files(*.txt)|*.txt|All files (*.*)|*.*  ";
             this.openFileDialog1.Title = "Import Words From File Dialog";
             this.openFileDialog1.FileOk += new System.ComponentModel.CancelEventHandler(this.openFileDialog1_FileOk);
+>>>>>>> 137b0827aafce032bbff3cfdd4f8830abd1be97a
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+<<<<<<< HEAD
+            this.ClientSize = new System.Drawing.Size(591, 348);
+            this.Controls.Add(this.btn_settings);
+            this.Controls.Add(this.btn_startLearn);
+            this.Controls.Add(this.btn_addWord);
+=======
             this.ClientSize = new System.Drawing.Size(368, 361);
             this.Controls.Add(this.tableLayoutPanel1);
+>>>>>>> 137b0827aafce032bbff3cfdd4f8830abd1be97a
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form1";
             this.Text = "Learner";
@@ -134,9 +166,13 @@
         private System.Windows.Forms.Button btn_addWord;
         private System.Windows.Forms.Button WatchAllWords;
         private System.Windows.Forms.Button btn_startLearn;
+<<<<<<< HEAD
+        private System.Windows.Forms.Button btn_settings;
+=======
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Button importWords;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
+>>>>>>> 137b0827aafce032bbff3cfdd4f8830abd1be97a
     }
 }
 
