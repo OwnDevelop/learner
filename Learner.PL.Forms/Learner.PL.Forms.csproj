@@ -11,8 +11,6 @@
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
-    <TargetFrameworkProfile>
-    </TargetFrameworkProfile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -23,7 +21,6 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -33,7 +30,6 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -49,44 +45,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="fAddWords.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="fAddWords.Designer.cs">
-      <DependentUpon>fAddWords.cs</DependentUpon>
-    </Compile>
-    <Compile Include="fError.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="fError.Designer.cs">
-      <DependentUpon>fError.cs</DependentUpon>
-    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="fSetting.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="fSetting.Designer.cs">
-      <DependentUpon>fSetting.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Learner.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="fAddWords.resx">
-      <DependentUpon>fAddWords.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="fError.resx">
-      <DependentUpon>fError.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="fSetting.resx">
-      <DependentUpon>fSetting.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -96,7 +64,6 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -111,25 +78,5 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Leaner.BLL\Leaner.BLL.csproj">
-      <Project>{59151074-03e1-4f0c-b4f7-96141cd27df6}</Project>
-      <Name>Leaner.BLL</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Learner.BLL.Abstract\Learner.BLL.Abstract.csproj">
-      <Project>{7d4b8ffc-ebf1-42e3-b103-2e4670bbfbf4}</Project>
-      <Name>Learner.BLL.Abstract</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Learner.Entities\Learner.Entities.csproj">
-      <Project>{b88ba372-29bf-4678-8ea4-710ee4d5c14e}</Project>
-      <Name>Learner.Entities</Name>
-    </ProjectReference>
-  </ItemGroup>
-<<<<<<< HEAD
-=======
-  <ItemGroup>
-    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
-  </ItemGroup>
->>>>>>> 137b0827aafce032bbff3cfdd4f8830abd1be97a
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

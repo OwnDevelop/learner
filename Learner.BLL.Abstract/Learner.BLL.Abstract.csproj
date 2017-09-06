@@ -45,10 +45,6 @@
     <Compile Include="UnknowException.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Learner.DAL.Abstract\Learner.DAL.Abstract.csproj">
-      <Project>{8d94f652-a823-443f-94f1-a9d3da0d5e8c}</Project>
-      <Name>Learner.DAL.Abstract</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Learner.Entities\Learner.Entities.csproj">
       <Project>{B88BA372-29BF-4678-8EA4-710EE4D5C14E}</Project>
       <Name>Learner.Entities</Name>

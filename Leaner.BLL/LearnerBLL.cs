@@ -13,7 +13,7 @@ namespace Leaner.BLL
 {
     public class LearnerBLL : ILearnerBLL
     {
-        ILearnerDAL dal;
+        ILearnerDAL dal; //cheeck in commit
 
         public LearnerBLL()
         {
@@ -44,7 +44,7 @@ namespace Leaner.BLL
             }
             catch (Exception e)
             {
-                throw new UnknownException("Unknow exception", e);
+                throw new UnknowException("Unknow exception", e);
             }
         }
 
@@ -65,7 +65,7 @@ namespace Leaner.BLL
             }
             catch (Exception e)
             {
-                throw new UnknownException("Unknown exception", e);
+                throw new UnknowException("Unknow exception", e);
             }
         }
 
@@ -85,7 +85,7 @@ namespace Leaner.BLL
             }
             catch (Exception e)
             {
-                throw new UnknownException("Unknown exception", e);
+                throw new UnknowException("Unknow exception", e);
             }
         }
     }
