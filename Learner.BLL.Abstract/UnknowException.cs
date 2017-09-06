@@ -6,19 +6,19 @@ using System.Threading.Tasks;
 
 namespace Learner.BLL.Abstract
 {
-    public class UnknowException :Exception
+    public class UnknownException :Exception
     {
-        public UnknowException()
+        public UnknownException()
         {
 
         }
 
-        public UnknowException(string message) : base(message)
+        public UnknownException(string message) : base(message)
         {
 
         }
 
-        public UnknowException(string message, Exception innerException) : base(message, innerException)
+        public UnknownException(string message, Exception innerException) : base(message, innerException)
         {
 
         }
