@@ -30,12 +30,13 @@
         {
             this.btn_addWord = new System.Windows.Forms.Button();
             this.btn_startLearn = new System.Windows.Forms.Button();
+            this.btn_settings = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btn_addWord
             // 
             this.btn_addWord.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btn_addWord.Location = new System.Drawing.Point(41, 46);
+            this.btn_addWord.Location = new System.Drawing.Point(168, 239);
             this.btn_addWord.Name = "btn_addWord";
             this.btn_addWord.Size = new System.Drawing.Size(276, 64);
             this.btn_addWord.TabIndex = 0;
@@ -46,7 +47,7 @@
             // btn_startLearn
             // 
             this.btn_startLearn.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btn_startLearn.Location = new System.Drawing.Point(41, 151);
+            this.btn_startLearn.Location = new System.Drawing.Point(168, 29);
             this.btn_startLearn.Name = "btn_startLearn";
             this.btn_startLearn.Size = new System.Drawing.Size(276, 67);
             this.btn_startLearn.TabIndex = 1;
@@ -54,11 +55,23 @@
             this.btn_startLearn.UseVisualStyleBackColor = true;
             this.btn_startLearn.Click += new System.EventHandler(this.btn_startLearn_Click);
             // 
+            // btn_settings
+            // 
+            this.btn_settings.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btn_settings.Location = new System.Drawing.Point(168, 135);
+            this.btn_settings.Name = "btn_settings";
+            this.btn_settings.Size = new System.Drawing.Size(276, 64);
+            this.btn_settings.TabIndex = 2;
+            this.btn_settings.Text = "Settings";
+            this.btn_settings.UseVisualStyleBackColor = true;
+            this.btn_settings.Click += new System.EventHandler(this.btn_settings_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(368, 261);
+            this.ClientSize = new System.Drawing.Size(591, 348);
+            this.Controls.Add(this.btn_settings);
             this.Controls.Add(this.btn_startLearn);
             this.Controls.Add(this.btn_addWord);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -72,6 +85,7 @@
 
         private System.Windows.Forms.Button btn_addWord;
         private System.Windows.Forms.Button btn_startLearn;
+        private System.Windows.Forms.Button btn_settings;
     }
 }
 
