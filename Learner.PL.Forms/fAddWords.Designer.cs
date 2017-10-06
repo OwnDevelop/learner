@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fAddWords));
             this.txtb_word = new System.Windows.Forms.TextBox();
             this.lbl_enter = new System.Windows.Forms.Label();
             this.lbl_1val = new System.Windows.Forms.Label();
@@ -182,6 +183,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.DimGray;
             this.ClientSize = new System.Drawing.Size(467, 261);
             this.Controls.Add(this.lbl_val6);
             this.Controls.Add(this.btn_cancel);
@@ -198,6 +200,7 @@
             this.Controls.Add(this.lbl_1val);
             this.Controls.Add(this.lbl_enter);
             this.Controls.Add(this.txtb_word);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "fAddWords";
             this.Text = "Add new word";
             this.ResumeLayout(false);

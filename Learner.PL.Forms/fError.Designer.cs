@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fError));
             this.lbl_errorText = new System.Windows.Forms.Label();
             this.btn_close = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -56,9 +57,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.DimGray;
             this.ClientSize = new System.Drawing.Size(298, 121);
             this.Controls.Add(this.btn_close);
             this.Controls.Add(this.lbl_errorText);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "fError";
             this.Text = "Error";
             this.ResumeLayout(false);

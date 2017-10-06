@@ -37,5 +37,10 @@ namespace Learner.PL.Forms
             settingsForm = new fSetting();
             settingsForm.ShowDialog();
         }
+
+        private void btn_Exit_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
